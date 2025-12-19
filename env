@@ -1,0 +1,42 @@
++--------------------------------------------------------------------------------------------------------+
+| npu-smi 25.2.0                                   Version: 25.2.0                                       |
++-------------------------------+-----------------+------------------------------------------------------+
+| NPU     Name                  | Health          | Power(W)     Temp(C)           Hugepages-Usage(page) |
+| Chip    Device                | Bus-Id          | AICore(%)    Memory-Usage(MB)                        |
++===============================+=================+======================================================+
+| 2       310P3                 | OK              | NA           51                0     / 0             |
+| 0       0                     | 0000:01:00.0    | 0            1529 / 44280                            |
++-------------------------------+-----------------+------------------------------------------------------+
+| 2       310P3                 | OK              | NA           49                0     / 0             |
+| 1       1                     | 0000:01:00.0    | 0            1411 / 43693                            |
++===============================+=================+======================================================+
++-------------------------------+-----------------+------------------------------------------------------+
+| NPU     Chip                  | Process id      | Process name             | Process memory(MB)        |
++===============================+=================+======================================================+
+| No running processes found in NPU 2                                                                    |
++===============================+=================+======================================================+
+# version: 1.0
+runtime_running_version=[8.2.0.2.220:8.2.RC2]
+compiler_running_version=[8.2.0.2.220:8.2.RC2]
+hccl_running_version=[8.2.0.2.220:8.2.RC2]
+opp_running_version=[8.2.0.2.220:8.2.RC2]
+toolkit_running_version=[8.2.0.2.220:8.2.RC2]
+aoe_running_version=[8.2.0.2.220:8.2.RC2]
+ncs_running_version=[8.2.0.2.220:8.2.RC2]
+opp_kernel_running_version=[8.2.0.2.220:8.2.RC2]
+opp_kernel_upgrade_version=[8.2.0.2.220:8.2.RC2]
+runtime_upgrade_version=[8.2.0.2.220:8.2.RC2]
+compiler_upgrade_version=[8.2.0.2.220:8.2.RC2]
+hccl_upgrade_version=[8.2.0.2.220:8.2.RC2]
+opp_upgrade_version=[8.2.0.2.220:8.2.RC2]
+toolkit_upgrade_version=[8.2.0.2.220:8.2.RC2]
+aoe_upgrade_version=[8.2.0.2.220:8.2.RC2]
+ncs_upgrade_version=[8.2.0.2.220:8.2.RC2]
+opp_kernel_installed_version=[7.5.T11.0.B081:8.0.RC3.alpha003][8.2.0.2.220:8.2.RC2]
+runtime_installed_version=[8.2.0.2.220:8.2.RC2]
+compiler_installed_version=[8.2.0.2.220:8.2.RC2]
+hccl_installed_version=[8.2.0.2.220:8.2.RC2]
+opp_installed_version=[8.2.0.2.220:8.2.RC2]
+toolkit_installed_version=[8.2.0.2.220:8.2.RC2]
+aoe_installed_version=[8.2.0.2.220:8.2.RC2]
+ncs_installed_version=[8.2.0.2.220:8.2.RC2]
