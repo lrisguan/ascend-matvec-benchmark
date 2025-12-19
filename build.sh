@@ -81,19 +81,3 @@ cmake --build build -j --target matvec_ascend
 
 echo "[STEP] Install to out/ ..."
 cmake --install build
-
-echo "[STEP] Run CPU matvec ..."
-if [ -x "${CURRENT_DIR}/out/bin/matvec_cpu" ]; then
-	"${CURRENT_DIR}/out/bin/matvec_cpu"
-else
-	echo "[WARN] CPU sample not built."
-fi
-
-echo "[STEP] Run AscendC matvec ..."
-if [ -x "${CURRENT_DIR}/out/bin/matvec_ascend" ]; then
-	"${CURRENT_DIR}/out/bin/matvec_ascend"
-else
-	echo "[WARN] AscendC sample not built."
-fi
-
-echo "MatVec build and run completed."
