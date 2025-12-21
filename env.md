@@ -1,3 +1,5 @@
+- CPU INFO:
+```bash
 Architecture:                    aarch64
 CPU op-mode(s):                  64-bit
 Byte Order:                      Little Endian
@@ -31,6 +33,10 @@ Vulnerability Srbds:             Not affected
 Vulnerability Tsx async abort:   Not affected
 Flags:                           fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fc
                                 ma dcpop asimddp asimdfhm
+```             
+
+- NPU INFO:
+```bash
 +--------------------------------------------------------------------------------------------------------+
 | npu-smi 25.2.0                                   Version: 25.2.0                                       |
 +-------------------------------+-----------------+------------------------------------------------------+
@@ -48,6 +54,10 @@ Flags:                           fp asimd evtstrm aes pmull sha1 sha2 crc32 atom
 +===============================+=================+======================================================+
 | No running processes found in NPU 2                                                                    |
 +===============================+=================+======================================================+
+```
+
+- CANN INFO:
+```bash
 # version: 1.0
 runtime_running_version=[8.2.0.2.220:8.2.RC2]
 compiler_running_version=[8.2.0.2.220:8.2.RC2]
@@ -73,3 +83,4 @@ opp_installed_version=[8.2.0.2.220:8.2.RC2]
 toolkit_installed_version=[8.2.0.2.220:8.2.RC2]
 aoe_installed_version=[8.2.0.2.220:8.2.RC2]
 ncs_installed_version=[8.2.0.2.220:8.2.RC2]
+```
