@@ -81,3 +81,5 @@ cmake --build build -j --target matvec_ascend
 
 echo "[STEP] Install to out/ ..."
 cmake --install build
+
+bash perf.sh
