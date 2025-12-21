@@ -2,7 +2,7 @@
 echo "[C] running on CPU..."
 ./out/bin/matvec_cpu
 
-echo "[C] running on NPU"
+echo "[C] running on NPU..."
 ./out/bin/matvec_ascend
 
 echo "[Py] running on CPU..."
