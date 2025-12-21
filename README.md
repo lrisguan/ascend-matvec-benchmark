@@ -1,24 +1,27 @@
 # ascend-matvec-benchmark
 
 ***Reference**:[AscendC Example](https://gitee.com/ascend/samples/tree/8.0.RC3/operator/HelloWorldSample)*
-> All the [build.sh](./build.sh) code is based on it.
+> All the [run.sh](./run.sh) code is based on it.
 - Directory structure
 ```bash
-├── ascendc
+├── ascendc               # source code of AscendC
 │   ├── CMakeLists.txt
 │   ├── main_ascend.cpp
 │   └── matvec_kernel.cpp
-├── build.sh
 ├── CMakeLists.txt
-├── cpu
+├── cpu                   # source code of C(run on CPU)
 │   ├── CMakeLists.txt
 │   └── main_cpu.cpp
 ├── env
-├── mindspore
+├── mindspore             # source code of python using mindspore
+│   ├── ascend.ipynb
+│   ├── cpu.ipynb
 │   ├── matvec_ascend.py
-│   └── matvec_cpu.py
-├── perf.sh
-└── README.md
+│   ├── matvec_cpu.py
+│   └── offload
+├── perf.sh               # perf shell script
+├── README.md
+└── run.sh                # build and perf shell script
 ```
 - **env**
     - **cpu**
@@ -111,10 +114,12 @@
 ```bash
 git clone https://github.com/lrisguan/ascend-matvec-benchmark.git
 cd ascend-matvec-benchmark
-pip install mindspore
+pip install mindspore -i https://repo.mindspore.cn/pypi/simple --trusted-host repo.mindspore.cn --extra-index-url https://repo.huaweicloud.com/repository/pypi/simple
 # Attention: be sure you've run:
 # source /usr/local/Ascend/ascend-toolkit/set_env.sh
 # before execute following commands!
-./build.sh
+./run.sh
+# After build, you'll see the benchmark
+# if you just want to re-benchmark it, run:
 ./perf.sh
 ```
